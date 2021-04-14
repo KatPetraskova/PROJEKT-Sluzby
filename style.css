@@ -29,6 +29,13 @@ body {
 .kontejner {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.ikona_kontejner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .cestovatel {
@@ -41,20 +48,19 @@ body {
     text-align: center;
     font-size: 28px;
     color: black;
-    margin-right: 153px;
-    margin-left: 153px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    flex: 1 1 calc(100% - (2*153px));
+    margin: auto;
 }
 
-.popis {
+.popis,
+.sluzby,
+.delegati {
     text-align: center;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    flex: 1 1 calc(100% - (2*20px));
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    max-width: 460px;
 }
 
 .tlacitko {
@@ -66,31 +72,78 @@ body {
     padding-bottom: 10px;
     padding-right: 30px;
     padding-left: 30px;
+    width: 460px;
 }
 
 .dobrodruzstvi {
     background-color: #407BFF;
     flex: 1 1 calc(100% - 300px);
-    width: 195 px;
-    margin-right: 150px;
-    margin-left: 150px;
+    max-width: 195px;
+    margin: auto;
 }
 
 .pohoda {
     background-color: #8B8B8B;
-    flex: 1 1 calc(100% - 280px);
     margin-right: 140px;
     margin-left: 140px;
     width: 220px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .nadpis2 {
     text-align: center;
     font-size: 16px;
     color: black;
-    margin-right: 153px;
-    margin-left: 153px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    flex: 1 1 calc(100% - (2*153px));
+    margin: auto;
+    padding-top: 30px;
+}
+
+.ikona_kontejner {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    width: 460px;
+    box-shadow: 0px 4px 6px #407BFF1F;
+    border-radius: 10px;
+    font-size: 13px;
+    margin: 0 auto;
+}
+
+.ikona {
+    padding: 20px;
+}
+
+@media screen and (min-width: 640px) {
+
+.popis,
+.sluzby,
+.delegati {
+    max-width: 550px;
+}
+
+.kontejner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.dobrodruzstvi {
+    width: 195px;
+    margin: 10px;
+}
+
+.pohoda {
+    width: 220px;
+    margin: 10px;
+}
+
 }
