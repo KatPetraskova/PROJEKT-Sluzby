@@ -78,7 +78,7 @@ body {
 .dobrodruzstvi {
     background-color: #407BFF;
     flex: 1 1 calc(100% - 300px);
-    max-width: 195px;
+    width: 195px;
     margin: auto;
 }
 
@@ -97,7 +97,7 @@ body {
     font-size: 16px;
     color: black;
     margin: auto;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .ikona_kontejner {
@@ -111,6 +111,7 @@ body {
     border-radius: 10px;
     font-size: 13px;
     margin: 0 auto;
+    align-items: center;
 }
 
 .ikona {
@@ -130,20 +131,41 @@ body {
     flex-wrap: wrap;
 }
 
-.button {
+.ikona_wrap {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
+.button {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .dobrodruzstvi {
-    width: 195px;
+    max-width: 195px;
     margin: 10px;
 }
 
 .pohoda {
-    width: 220px;
+    max-width: 220px;
     margin: 10px;
 }
+
+.ikona_kontejner {
+    max-width: 30%;
+    justify-content: center;
+    text-align: center;
+}
+
+}
+
+@media screen and (min-width: 1100px) {
+
+
+
+
 
 }
