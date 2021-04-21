@@ -175,6 +175,8 @@ body {
 .kontejner {
     width: 1040px; 
     flex-direction: row;
+    align-items: center;
+    margin: auto;
 }
 
 .PC_kontejner_radek1,
